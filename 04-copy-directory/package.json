@@ -1,0 +1,11 @@
+{
+  "name": "04-copy-directory",
+  "version": "1.0.0",
+  "description": "В файле **index.js** директории **04-copy-directory** реализуйте функцию **copyDir** которая копирует содержимое папки **files** в папку **files-copy**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

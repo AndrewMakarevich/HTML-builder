@@ -1,0 +1,12 @@
+{
+  "name": "01-read-file",
+  "version": "1.0.0",
+  "description": "В файле **index.js** директории **01-read-file** напишите скрипт выводящий в консоль содержимое файла **text.txt**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
