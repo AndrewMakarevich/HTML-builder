@@ -13,7 +13,8 @@ function editFile() {
     });
     rl.question('Введите текст для записи в файл\n', (answer) => {
         if (answer === 'exit') {
-            return console.log('Good bye!');
+            // console.log('Good bye!');
+            return rl.close();
         } else {
             fs.appendFile(path.resolve(__dirname, '.', 'text.txt'), answer, (error) => {
                 if (error) throw error;
