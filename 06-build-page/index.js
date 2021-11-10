@@ -83,7 +83,7 @@ function createUniteHtmlCssFile() {
                 };
             });
             fs.readFile(`${STYLES_PATH}/${name}.css`, 'utf8', (error, layout) => {
-                if (error) next;
+                if (error) throw error;
                 fs.appendFile(`${DIST_PATH}/style.css`, `${layout}\n`, error => {
                     if (error) throw error;
                 });
