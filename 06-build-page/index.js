@@ -82,12 +82,20 @@ function createUniteHtmlCssFile() {
                     });
                 };
             });
-            fs.readFile(`${STYLES_PATH}/${name}.css`, 'utf8', (error, layout) => {
-                if (error) throw error;
-                fs.appendFile(`${DIST_PATH}/style.css`, `${layout}\n`, error => {
+            name === 'articles' ?
+                fs.readFile(`${STYLES_PATH}/main.css`, 'utf8', (error, layout) => {
                     if (error) throw error;
+                    fs.appendFile(`${DIST_PATH}/style.css`, `${layout}\n`, error => {
+                        if (error) throw error;
+                    });
+                })
+                :
+                fs.readFile(`${STYLES_PATH}/${name}.css`, 'utf8', (error, layout) => {
+                    if (error) throw error;
+                    fs.appendFile(`${DIST_PATH}/style.css`, `${layout}\n`, error => {
+                        if (error) throw error;
+                    });
                 });
-            });
         });
         return;
     });
